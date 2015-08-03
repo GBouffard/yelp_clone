@@ -1,0 +1,14 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'db/schema.rb'
+    - 'config/application.rb'
+    - 'bin/*'
+    - 'spec/spec_helper.rb'
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+  

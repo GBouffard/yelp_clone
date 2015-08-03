@@ -45,4 +45,5 @@ group :development, :test do
   gem 'rubocop'
   gem 'shoulda'
   gem 'rspec-collection_matchers'
+  gem 'devise'
 end

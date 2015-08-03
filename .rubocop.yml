@@ -5,6 +5,8 @@ AllCops:
     - 'config/application.rb'
     - 'bin/*'
     - 'spec/spec_helper.rb'
+    - 'db/migrate/*'
+    - 'config/initializers/devise.rb'
 
 Documentation:
   Enabled: false

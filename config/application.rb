@@ -35,5 +35,19 @@ module Yelp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Trying to Access-Control-Allow-Origin in Rails 4. So far, nothing workinbg!
+    # config.action_dispatch.default_headers.merge!({
+    # 'Access-Control-Allow-Origin' => '*',
+    # 'Access-Control-Request-Method' => '*'
+    # })
+
+    # from the rack-cors gem; supposed to work but doesnt
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+        origins "*"
+        resource "*", headers: :any, methods: [:get, :post, :delete, :put, :options]
+      end
+    end
   end
 end

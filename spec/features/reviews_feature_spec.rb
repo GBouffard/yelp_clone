@@ -16,4 +16,10 @@ feature 'reviewing' do
   scenario 'a user cannot leave a 2nd review on a restaurant he/she already reviewed' do
     expect(page).not_to have_link 'Review KFC'
   end
+
+  scenario 'a review can be deleted' do
+    expect(page).to have_link 'Delete KFC review'
+    click_link 'Delete KFC review'
+    expect(page).to have_link 'Review KFC'
+  end
 end

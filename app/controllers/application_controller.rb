@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   # found on StackOverFlow, supposed to allow CORS access, but doenst
-  # protect_from_forgery   
+  # protect_from_forgery
   #   after_filter :set_access_control_headers
 
   # def set_access_control_headers

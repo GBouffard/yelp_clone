@@ -7,6 +7,9 @@ AllCops:
     - 'spec/spec_helper.rb'
     - 'db/migrate/*'
     - 'config/initializers/devise.rb'
+    - 'app/models/ability.rb'
+    - 'app/controllers/users/omniauth_callbacks_controller.rb'
+    - 'config.ru'
 
 Documentation:
   Enabled: false

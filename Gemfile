@@ -47,6 +47,6 @@ group :development, :test do
   gem 'rspec-collection_matchers'
   gem 'devise'
   gem 'omniauth-facebook'
-  gem 'rack-cors', :require => 'rack/cors'
+  gem 'rack-cors', require: 'rack/cors'
   gem 'cancan'
 end

@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 feature 'restaurants' do
+  before do
+    user_signs_in
+  end
+
   context 'no restaurants have been added' do
     scenario 'should display a prompt to add a restaurant' do
       visit '/restaurants'
@@ -73,4 +77,13 @@ feature 'restaurants' do
       expect(page).to have_content 'Restaurant deleted successfully'
     end
   end
+end
+
+def user_signs_in
+  visit('/')
+  click_link('Sign up')
+  fill_in('Email', with: 'guillaume@yelp.com')
+  fill_in('Password', with: 'thepassword')
+  fill_in('Password confirmation', with: 'thepassword')
+  click_button('Sign up')
 end

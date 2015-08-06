@@ -17,9 +17,15 @@ feature 'reviewing' do
     expect(page).not_to have_link 'Review KFC'
   end
 
-  scenario 'a review can be deleted' do
+  scenario 'only the creator of a review can delete this review' do
     expect(page).to have_link 'Delete KFC review'
     click_link 'Delete KFC review'
+    expect(page).to have_link 'Review KFC'
+  end
+
+  scenario 'a user cannot delete a review that he/she did not create' do
+    other_user_signs_in
+    expect(page).not_to have_link 'Delete KFC review'
     expect(page).to have_link 'Review KFC'
   end
 end

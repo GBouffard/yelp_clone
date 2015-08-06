@@ -21,3 +21,11 @@ def other_user_signs_in
   fill_in('Password', with: 'dapassword')
   click_button('Log in')
 end
+
+def user_leaves_review
+  visit '/restaurants'
+  click_link 'Review KFC'
+  fill_in 'Thoughts', with: 'so so'
+  select '3', from: 'Rating'
+  click_button 'Leave Review'
+end

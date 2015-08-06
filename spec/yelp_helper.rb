@@ -29,3 +29,11 @@ def user_leaves_review
   select '3', from: 'Rating'
   click_button 'Leave Review'
 end
+
+def leave_review(thoughts, rating)
+  visit '/restaurants'
+  click_link 'Review KFC'
+  fill_in 'Thoughts', with: thoughts
+  select rating, from: 'Rating'
+  click_button 'Leave Review'
+end

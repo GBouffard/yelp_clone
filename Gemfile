@@ -48,4 +48,5 @@ group :development, :test do
   gem 'devise'
   gem 'omniauth-facebook'
   gem 'rack-cors', :require => 'rack/cors'
+  gem 'cancan'
 end

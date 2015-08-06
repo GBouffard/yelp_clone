@@ -57,8 +57,8 @@ feature 'restaurants' do
   end
 
   context 'editing restaurants' do
-    before { Restaurant.create name: 'KFC' }
-    scenario 'let a user edit a restaurant' do
+    before { user_creates_restaurant }
+    scenario 'let a user edit a restaurant when its creator clicks an edit link' do
       visit '/restaurants'
       click_link 'Edit KFC'
       fill_in 'Name', with: 'Kentucky Fried Chicken'
@@ -66,24 +66,50 @@ feature 'restaurants' do
       expect(page).to have_content 'Kentucky Fried Chicken'
       expect(current_path).to eq '/restaurants'
     end
+
+    scenario 'cannot be done by a user who did not create that specific restaurant' do
+      other_user_signs_in
+      visit '/restaurants'
+      expect(page).not_to have_link 'Edit KFC'
+    end    
   end
 
   context 'deleting restaurants' do
-    before { Restaurant.create name: 'KFC' }
-    scenario 'removes a restaurant when a user clicks a delete link' do
+    before { user_creates_restaurant }
+    scenario 'removes a restaurant when its creator clicks a delete link' do
       visit '/restaurants'
       click_link 'Delete KFC'
       expect(page).not_to have_content 'KFC'
       expect(page).to have_content 'Restaurant deleted successfully'
     end
+
+    scenario 'cannot be done by a user who did not create that specific restaurant' do
+      other_user_signs_in
+      visit '/restaurants'
+      expect(page).not_to have_link 'Delete KFC'
+    end
   end
 end
 
 def user_signs_in
+  @guillaume = User.create(email: 'guillaume@yelp.com', password: 'thepassword', password_confirmation: 'thepassword')
   visit('/')
-  click_link('Sign up')
+  click_link('Sign in')
   fill_in('Email', with: 'guillaume@yelp.com')
   fill_in('Password', with: 'thepassword')
-  fill_in('Password confirmation', with: 'thepassword')
-  click_button('Sign up')
+  click_button('Log in')
+end
+
+def user_creates_restaurant
+  @guillaume.restaurants.create name: 'KFC'
+end
+
+def other_user_signs_in
+  click_link('Sign out')
+  @eviltwin = User.create(email: 'eviltwin@yelp.com', password: 'dapassword', password_confirmation: 'dapassword')
+  visit('/')
+  click_link('Sign in')
+  fill_in('Email', with: 'eviltwin@yelp.com')
+  fill_in('Password', with: 'dapassword')
+  click_button('Log in')  
 end

@@ -51,4 +51,5 @@ group :development, :test do
   gem 'cancan'
   gem 'poltergeist'
   gem 'database_cleaner'
+  gem 'paperclip'
 end

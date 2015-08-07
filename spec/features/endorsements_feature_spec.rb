@@ -11,4 +11,10 @@ feature 'endorsing reviews' do
     click_link 'Endorse Review'
     expect(page).to have_content('1 endorsement')
   end
+
+  scenario 'a user can only endorse a review once' do
+    visit '/restaurants'
+    click_link 'Endorse Review'
+    expect(page).not_to have_link('Endorse Review')
+  end
 end

@@ -12,6 +12,12 @@ def user_creates_restaurant
   @guillaume.restaurants.create name: 'KFC'
 end
 
+def user_creates_review
+  user_signs_in
+  @kfc = user_creates_restaurant
+  @kfc.reviews.create(rating: 3, thoughts: 'It was an abomination')
+end
+
 def other_user_signs_in
   click_link('Sign out')
   @eviltwin = User.create(email: 'eviltwin@yelp.com', password: 'dapassword', password_confirmation: 'dapassword')

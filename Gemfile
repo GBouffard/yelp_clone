@@ -49,4 +49,6 @@ group :development, :test do
   gem 'omniauth-facebook'
   gem 'rack-cors', require: 'rack/cors'
   gem 'cancan'
+  gem 'poltergeist'
+  gem 'database_cleaner'
 end

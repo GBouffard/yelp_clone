@@ -20,6 +20,7 @@ Devise.setup do |config|
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
   require 'devise/orm/active_record'
+  config.secret_key = Rails.application.secrets.secret_key
   config.omniauth :facebook, Rails.application.secrets.fb_APP_ID,
                              Rails.application.secrets.fb_APP_SECRET
 

@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = '050bc88b29bc435d7594a9870e29f5f5f0e6a0a9bb5150ec68dca00e1dad71a85500a14143c38515f97020a9977c1d6d08be33b35ab3d18a3160f8da136e47e9'
+  config.secret_key = 'b2bb88ffe56e1148a75027f30ef0aad107d94f95395f45d9e3b711d7e471be5612a8894022517b18d4eb877487372a1c5e1b037eae5fd65ca1c5348678c04c42'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -20,7 +20,6 @@ Devise.setup do |config|
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
   require 'devise/orm/active_record'
-  config.secret_key = Rails.application.secrets.secret_key
   config.omniauth :facebook, Rails.application.secrets.fb_APP_ID,
                              Rails.application.secrets.fb_APP_SECRET
 

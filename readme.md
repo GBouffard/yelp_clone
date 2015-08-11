@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/GBouffard/yelp_clone.svg?branch=master)](https://travis-ci.org/GBouffard/yelp_clone)
+
 :fork_and_knife: Yelp-Clone :fork_and_knife:
 ===
 This is the week 8 tutorial from Makers Academy: the idea was to create a YELP clone to get a basic introduction to Ruby On Rails.

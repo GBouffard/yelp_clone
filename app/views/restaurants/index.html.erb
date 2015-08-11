@@ -1,8 +1,10 @@
 <% if @restaurants.any? %>
   <% @restaurants.each do |restaurant| %>
-    <%= image_tag restaurant.image.url(:thumb) %>
-    <h2> <%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
-    <h3>Average rating: <%= star_rating(restaurant.average_rating) %></h3>
+    <h1>
+      <%= image_tag restaurant.image.url(:thumb) %>
+      <div id='restaurant_name'><%= link_to restaurant.name, restaurant_path(restaurant) %></div>
+      <div id='rating_box'>Average rating: <%= star_rating(restaurant.average_rating) %></div>
+    </h1>
     <% if can? :update, restaurant %>
       <%= link_to "Edit #{restaurant.name}", edit_restaurant_path(restaurant) %>
     <% end %>

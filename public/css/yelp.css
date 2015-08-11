@@ -29,6 +29,10 @@ header a {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .header_button {
   -moz-box-shadow:inset 0px 1px 11px -18px #f9eca0;
@@ -73,4 +77,23 @@ header a {
 .header_button:active {
   position:relative;
   top:1px;
+}
+
+h1 {
+  font-family:Helvetica;
+  margin-left: 1%;
+}
+
+#restaurant_name {
+  font-size:15px;
+  position: absolute;
+  margin: 1%;
+  display: inline-block;
+}
+
+#rating_box {
+  font-size:14px;
+  float: right;
+  margin-right: 2%;
+  margin-top: 1%;
 }

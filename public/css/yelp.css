@@ -1,0 +1,10 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  background-image: url(/images/yelp_background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  color: #000068;  
+}

@@ -22,6 +22,7 @@ task default: [:cop]
 module Yelp
   class Application < Rails::Application
     # config.secret_key_base = YAML.load(File.open("#{Rails.root}/config/secrets.yml"))[Rails.env]['secret_key_base']
+    config.secret_token = ENV['SECRET_KEY_BASE'] || 'b127ebf43bdebee252d76d542284f091ceb84203ee593def6add14976e82f1eb0c46568307939f937dcba36ff6b199910f8ad7da7bc127fec363a7fc6f6750f8'
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

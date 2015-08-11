@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Yelp</title>
+    <title>Guillaume's Yelp</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">  
+    <link rel="stylesheet" type="text/css" href="/css/yelp.css">
   </head>
 
   <body>
-    <% if user_signed_in? %>
-      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
-      <%= link_to "Sign in", new_user_session_path %>
-      <%= link_to "Sign up", new_user_registration_path %>
-    <% end %>
+    <header>
+      <% if user_signed_in? %>
+        <div class="header_button">
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+        </div>
+      <% else %>
+        <div class="header_button">
+          <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+          <%= link_to "Sign in", new_user_session_path %>
+          <%= link_to "Sign up", new_user_registration_path %>
+        </div>        
+      <% end %>
+    </header>
     <%= notice %> 
     <%= yield %>
   </body>

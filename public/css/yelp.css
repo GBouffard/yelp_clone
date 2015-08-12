@@ -96,16 +96,22 @@ h1 {
   margin-top: 1%;
 }
 
-
-#restaurants_box {
-  background-image: url(/images/restaurant_box_background.jpg);
-  background-position: center;
-  background-size: 100% 100%;
+.main_box {
   margin: 30px;
   padding: 10px 10px;
   line-height: 200%;
   border: 1px solid black;
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+#restaurants_box {
+  background-image: url(/images/restaurant_box_background.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#reviews_box {
+  background-image: url(/images/marble_background.jpg);
 }
 
 .each_restaurant_box {

@@ -184,3 +184,12 @@ h1 {
   position:relative;
   top:1px;
 }
+
+div.black-line {
+  border-top: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+  margin-left: 25px;  
+}
+

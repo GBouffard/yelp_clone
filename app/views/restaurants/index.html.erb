@@ -21,6 +21,9 @@
           <% if restaurant.reviews.any? %>
             <ul>
               <% restaurant.reviews.each do |review| %>
+                <% if review.endorsements.count > 1 %>
+                  <div class='black-line'></div>
+                <% end %>
                 <li>
                   <%= review.thoughts %>, <strong><%= review.rating %></strong>/5
                     <%= link_to "Endorse Review", review_endorsements_path(review), class: 'endorsements-link' %>

@@ -95,3 +95,15 @@ h1 {
   margin-right: 2%;
   margin-top: 1%;
 }
+
+
+#restaurant_box {
+  background-image: url(/images/restaurant_box_background.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  margin: 30px;
+  padding: 10px 10px;
+  line-height: 200%;
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}

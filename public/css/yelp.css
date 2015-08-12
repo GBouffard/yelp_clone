@@ -80,7 +80,7 @@ h1 {
   margin-left: 1%;
 }
 
-#restaurant_name {
+.restaurant_name {
   color: black;
   font-size:15px;
   position: absolute;

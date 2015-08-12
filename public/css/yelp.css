@@ -97,7 +97,7 @@ h1 {
 }
 
 
-#restaurant_box {
+#restaurants_box {
   background-image: url(/images/restaurant_box_background.jpg);
   background-position: center;
   background-size: 100% 100%;
@@ -106,4 +106,12 @@ h1 {
   line-height: 200%;
   border: 1px solid black;
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.each_restaurant_box {
+  background-color: white;
+  background-size: 100% 100%;
+  margin: 15px;
+  padding: 10px 10px;
+  border: 1px solid black;
 }

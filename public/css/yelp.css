@@ -141,3 +141,46 @@ h1 {
 .owner_buttons:hover {
   background: #262626;
 }
+.endorsements-link {
+  -moz-box-shadow:inset 0px 1px 3px 0px #696969;
+  -webkit-box-shadow:inset 0px 1px 3px 0px #696969;
+  box-shadow:inset 0px 1px 3px 0px #696969;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bfc0c7), color-stop(1, #b4abd6));
+  background:-moz-linear-gradient(top, #bfc0c7 5%, #b4abd6 100%);
+  background:-webkit-linear-gradient(top, #bfc0c7 5%, #b4abd6 100%);
+  background:-o-linear-gradient(top, #bfc0c7 5%, #b4abd6 100%);
+  background:-ms-linear-gradient(top, #bfc0c7 5%, #b4abd6 100%);
+  background:linear-gradient(to bottom, #bfc0c7 5%, #b4abd6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bfc0c7', endColorstr='#b4abd6',GradientType=0);
+  background-color:#bfc0c7;
+  -moz-border-radius:37px;
+  -webkit-border-radius:37px;
+  border-radius:37px;
+  border:3px solid #5d485e;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:12px;
+  font-weight:bold;
+  padding:0px 10px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #2b665e;
+}
+
+.endorsements-link:hover {
+  box-shadow:inset 0px 1px 3px 0px #696969;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dbccdb), color-stop(1, #c3b9ed));
+  background:-moz-linear-gradient(top, #dbccdb 5%, #c3b9ed 100%);
+  background:-webkit-linear-gradient(top, #dbccdb 5%, #c3b9ed 100%);
+  background:-o-linear-gradient(top, #dbccdb 5%, #c3b9ed 100%);
+  background:-ms-linear-gradient(top, #dbccdb 5%, #c3b9ed 100%);
+  background:linear-gradient(to bottom, #dbccdb 5%, #c3b9ed 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbccdb', endColorstr='#c3b9ed',GradientType=0);
+  background-color:#dbccdb;
+}
+
+.endorsements-link:active {
+  position:relative;
+  top:1px;
+}

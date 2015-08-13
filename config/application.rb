@@ -11,6 +11,7 @@ require "action_view/railtie"
 require "sprockets/railtie"
 require 'rubocop/rake_task'
 require 'rspec/core/rake_task'
+require 'coveralls'
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -18,6 +19,7 @@ require 'rspec/core/rake_task'
 Bundler.require(*Rails.groups)
 RuboCop::RakeTask.new(:cop)
 task default: [:cop]
+Coveralls.wear!
 
 module Yelp
   class Application < Rails::Application

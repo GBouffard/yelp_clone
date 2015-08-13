@@ -54,4 +54,5 @@ group :development, :test do
   gem 'paperclip'
   gem 'bootstrap-sass', '~> 3.3.4'
   gem 'autoprefixer-rails'
+  gem 'coveralls', require: false
 end

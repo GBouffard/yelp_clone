@@ -193,3 +193,8 @@ div.black-line {
   margin-left: 25px;  
 }
 
+#add_a_restaurant {
+  position:relative;
+  top: 15px;
+  left: 45%;
+}

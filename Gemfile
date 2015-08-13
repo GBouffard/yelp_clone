@@ -52,4 +52,6 @@ group :development, :test do
   gem 'poltergeist'
   gem 'database_cleaner'
   gem 'paperclip'
+  gem 'bootstrap-sass', '~> 3.3.4'
+  gem 'autoprefixer-rails'
 end

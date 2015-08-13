@@ -1,3 +1,4 @@
+<a href='/restaurants/new' class="btn btn-primary" id='add_a_restaurant' >Add a restaurant</a>
 <div class='main_box' id='restaurants_box'>
   <% if @restaurants.any? %>
     <% @restaurants.each do |restaurant| %>
@@ -44,5 +45,3 @@
     No restaurants yet 
   <% end %>
 </div>
-
-<a href='/restaurants/new'>Add a restaurant</a>

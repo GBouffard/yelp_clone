@@ -34,13 +34,8 @@ class RestaurantsController < ApplicationController
 
   def destroy
     @restaurant = Restaurant.find(params[:id])
-    if @restaurant.reviews.any?
-      # @restaurant.reviews.each { |review| review.destroy }
-      flash[:notice] = 'this restaurant cannot be destroyed yet. Guillaume is working on a solution'
-    else
-      @restaurant.destroy
-      flash[:notice] = 'Restaurant deleted successfully'
-    end
+    @restaurant.destroy
+    flash[:notice] = 'Restaurant deleted successfully'
     redirect_to '/restaurants'
   end
 

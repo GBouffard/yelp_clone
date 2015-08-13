@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/GBouffard/yelp_clone.svg?branch=master)](https://travis-ci.org/GBouffard/yelp_clone)
+[![Build Status](https://travis-ci.org/GBouffard/yelp_clone.svg?branch=master)](https://travis-ci.org/GBouffard/yelp_clone) [![Code Climate](https://codeclimate.com/github/GBouffard/yelp_clone/badges/gpa.svg)](https://codeclimate.com/github/GBouffard/yelp_clone)
 
 :fork_and_knife: Yelp-Clone :fork_and_knife:
 ===

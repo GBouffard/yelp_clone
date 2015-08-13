@@ -26,7 +26,8 @@
                   <div class='black-line'></div>
                 <% end %>
                 <li>
-                  <%= review.thoughts %>, <strong><%= review.rating %></strong>/5
+                  <%= review.thoughts %><br>
+                  <%= review.rating %>
                   <span class="endorsements_count"> <%= review.endorsements.count %> </span> <%= 'endorsement'.pluralize(review.endorsements.count) %>
                     <%= link_to "Endorse Review", review_endorsements_path(review), class: 'endorsements-link' %>
                   <% if can? :destroy, review %>

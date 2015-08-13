@@ -27,11 +27,39 @@ header a {
   color: white;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
 }
 
 .header_button {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8f8f8f), color-stop(1, #706e67));
+  background:-moz-linear-gradient(top, #8f8f8f 5%, #706e67 100%);
+  background:-webkit-linear-gradient(top, #8f8f8f 5%, #706e67 100%);
+  background:-o-linear-gradient(top, #8f8f8f 5%, #706e67 100%);
+  background:-ms-linear-gradient(top, #8f8f8f 5%, #706e67 100%);
+  background:linear-gradient(to bottom, #8f8f8f 5%, #706e67 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8f8f8f', endColorstr='#706e67',GradientType=0);
+  background-color:#f0c911;
+  -moz-border-radius:26px;
+  -webkit-border-radius:26px;
+  border-radius:26px;
+  border:1px solid black;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-family:Arial;
+  font-size:10px;
+  font-weight:bold;
+  padding:2px 7px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ded17c;
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration:none;
+}
+
+.header_button:hover {
   -moz-box-shadow: 0px 1px 0px 0px #1c1b18;
   -webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
   box-shadow: 0px 1px 0px 0px #1c1b18;
@@ -61,15 +89,6 @@ a {
   margin-right: 5px;
 }
 
-.header_button:hover {
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8f8f8f), color-stop(1, #706e67));
-  background:-moz-linear-gradient(top, #8f8f8f 5%, #706e67 100%);
-  background:-webkit-linear-gradient(top, #8f8f8f 5%, #706e67 100%);
-  background:-o-linear-gradient(top, #8f8f8f 5%, #706e67 100%);
-  background:-ms-linear-gradient(top, #8f8f8f 5%, #706e67 100%);
-  background:linear-gradient(to bottom, #8f8f8f 5%, #706e67 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8f8f8f', endColorstr='#706e67',GradientType=0);
-}
 .header_button:active {
   position:relative;
   top:1px;
@@ -88,11 +107,17 @@ h2 {
 }
 
 .restaurant_name {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
   color: black;
-  font-size:15px;
   position: absolute;
   margin: 1%;
   display: inline-block;
+}
+
+.restaurant_name:hover {
+  text-shadow: 4px 4px 4px red;
 }
 
 #rating_box {

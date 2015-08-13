@@ -80,6 +80,13 @@ h1 {
   margin-left: 1%;
 }
 
+h2 {
+  font-weight:bold;
+  font-style: italic;
+  text-decoration: underline; 
+  padding-bottom: 15px;
+}
+
 .restaurant_name {
   color: black;
   font-size:15px;
@@ -197,4 +204,17 @@ div.black-line {
   position:relative;
   top: 15px;
   left: 45%;
+}
+
+.notice {
+  background-color: #777777;
+  text-align: center;
+  padding:5px 10px;
+  margin-top: 1%;
+  margin-left: 35%;
+  margin-right: 35%;
+  border: 2px solid black;
+  border-radius:10px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.4);
+  color: white;
 }

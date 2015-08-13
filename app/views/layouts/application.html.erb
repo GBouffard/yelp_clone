@@ -29,7 +29,11 @@
         </div>        
       <% end %>
     </header>
-    <%= notice %> 
+    <% if !notice.nil? %>
+      <div class="notice"> 
+      <%= notice %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>

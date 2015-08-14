@@ -4,7 +4,11 @@
 ===
 This is the week 8 tutorial from Makers Academy: the idea was to create a YELP clone to get a basic introduction to Ruby On Rails.
 
-![](pic_to_come)
+![](public/images/screenshot_1.jpg)
+
+![](public/images/screenshot_2.jpg)
+
+![](public/images/screenshot_3.jpg)
 
 Objectives of exercise
 ----
@@ -16,10 +20,10 @@ Technologies used
 - Ruby on Rails
 - Capybara
 - Rspec
-- HTML
+- HTML, CSS & Bootstrap
 - Postgresql
-- Mustache.js
-- Gem: Omniauth-Facebook
+- Javascript & AJAX
+- Additional Gems: Omniauth-Facebook, Paperclip and Poltergeist
 
 How to run it
 ----
@@ -28,7 +32,7 @@ git clone git@github.com:GBouffard/yelp_clone.git
 cd yelp_clone
 bin/rails server
 ```
-go to localhost:3000/restaurants
+go to localhost:3000, and you can now create restaurants, wit their names, description and pictures and add, update and delete reviews and endorsements.
 
 How to test it
 ----
@@ -38,4 +42,4 @@ rspec
 ```
 
 And this is what you should see
-![](pic_to_come)
+![](public/images/rspec_tests_screenshot.jpg)

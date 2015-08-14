@@ -4,6 +4,10 @@
 ===
 This is the week 8 tutorial from Makers Academy: the idea was to create a YELP clone to get a basic introduction to Ruby On Rails.
 
+Heroku
+----
+[Guillaume's Yelp](http://guillaume-yelp.herokuapp.com/)
+
 ![](public/images/screenshot_1.png)
 
 ![](public/images/screenshot_2.png)
@@ -24,6 +28,7 @@ Technologies used
 - Postgresql
 - Javascript & AJAX
 - Additional Gems: Omniauth-Facebook, Paperclip and Poltergeist
+- StackOverflow for a question.
 
 How to run it
 ----

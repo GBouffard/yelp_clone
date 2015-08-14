@@ -4,11 +4,11 @@
 ===
 This is the week 8 tutorial from Makers Academy: the idea was to create a YELP clone to get a basic introduction to Ruby On Rails.
 
-![](public/images/screenshot_1.jpg)
+![](public/images/screenshot_1.png)
 
-![](public/images/screenshot_2.jpg)
+![](public/images/screenshot_2.png)
 
-![](public/images/screenshot_3.jpg)
+![](public/images/screenshot_3.png)
 
 Objectives of exercise
 ----

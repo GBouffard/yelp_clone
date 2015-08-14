@@ -31,6 +31,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'devise'
+gem 'omniauth-facebook'
+gem 'rack-cors', require: 'rack/cors'
+gem 'cancan'
+gem 'poltergeist'
+gem 'database_cleaner'
+gem 'paperclip'
+gem 'bootstrap-sass', '~> 3.3.4'
+gem 'autoprefixer-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -45,14 +55,9 @@ group :development, :test do
   gem 'rubocop'
   gem 'shoulda'
   gem 'rspec-collection_matchers'
-  gem 'devise'
-  gem 'omniauth-facebook'
-  gem 'rack-cors', require: 'rack/cors'
-  gem 'cancan'
-  gem 'poltergeist'
-  gem 'database_cleaner'
-  gem 'paperclip'
-  gem 'bootstrap-sass', '~> 3.3.4'
-  gem 'autoprefixer-rails'
   gem 'coveralls', require: false
+end
+
+group :production do
+  gem 'rails_12factor'
 end
